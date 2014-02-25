@@ -67,13 +67,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 7, ../sass/screen.scss */
+/* line 12, ../sass/screen.scss */
+.info_content, .video_content, .footer {
+  height: 150px;
+  min-height: 150px;
+}
+
+/* line 17, ../sass/screen.scss */
+.header .logoArea, .header .signup_pitch, .info_content .info_content_left {
+  width: 50%;
+  height: 200px;
+}
+
+/* line 22, ../sass/screen.scss */
+.info_content .info_content_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  widows: 50%;
+  height: 200px;
+}
+
+/* line 30, ../sass/screen.scss */
+.header, .info_content, .video_content, .footer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 36, ../sass/screen.scss */
 body {
   width: 100%;
   background-color: #fc3136;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 #secondBackground {
   position: fixed;
   top: 0;
@@ -81,4 +109,48 @@ body {
   width: 50%;
   height: 100%;
   background-color: #00508c;
+  z-index: -1;
+}
+
+/* line 51, ../sass/screen.scss */
+#wrapper {
+  margin: auto;
+  width: 1000px;
+}
+
+/* line 56, ../sass/screen.scss */
+.header {
+  height: 400px;
+  min-height: 400px;
+  border: 1px #000000 solid;
+}
+/* line 62, ../sass/screen.scss */
+.header .logoArea {
+  display: inline-block;
+  float: left;
+}
+/* line 72, ../sass/screen.scss */
+.header .curious_spiel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 400px;
+  float: right;
+  border: 1px #CCFFFF dotted;
+}
+
+/* line 83, ../sass/screen.scss */
+.info_content {
+  border: 1px #FFFFFF solid;
+}
+
+/* line 97, ../sass/screen.scss */
+.video_content {
+  border: 1px #FFFFCC solid;
+}
+
+/* line 103, ../sass/screen.scss */
+.footer {
+  border: 1px #CCCCCC solid;
 }
